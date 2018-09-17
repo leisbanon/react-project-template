@@ -5,7 +5,6 @@ const components = (path) => Loadable({
     loading:() => (null)
 });
 
-const List = components('list/list');
+// const List = components('list/list');
 export {
-    List,
 }

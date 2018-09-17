@@ -22,15 +22,12 @@ const rootRouters = [
         //根路由匹配
         path:'/',
         exact:true,
-        component:() => <Redirect to='/react-example'/>
+        component:() => <Redirect to='/react-project'/>
     },
     {
         // 首页
-        path:'/react-example',
-        component:Loadable({
-            loader:() => import('@/components/list/list'),
-            loading:() => ('')
-        })
+        path:'/react-project',
+        component:loadables('main')
     },
     {
         // 404 匹配

@@ -3,14 +3,10 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  withRouter,
 } from 'react-router-dom'
 
 import { rootRouters } from '@/router/router'
 
-/**
- * 组件 以及 复合组件的应用
- */
 class App extends React.Component {
   render() {
     return(

@@ -3,6 +3,11 @@
         "react-app"
     ],
     "plugins": [
+        ["import",{
+                "libraryName":"antd-mobile",
+                "style": true
+            }
+        ],
         "syntax-dynamic-import"
     ]
 }

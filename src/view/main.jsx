@@ -2,8 +2,6 @@ import React from 'react';
 import { hot } from 'react-hot-loader'
 import './main.less'
 import { 
-    NavBar, 
-    Icon,
     TabBar,
 } from 'antd-mobile';
 

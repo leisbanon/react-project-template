@@ -1,11 +1,10 @@
-> ## 安装与开发
-
-## `init install`
+## 安装与开发
     npm install
 
-##  `start porject and open localhost:port`
+## 启动应用
     npm run start
 
-## `将应用程序打包发布`
+
+## 应用打包
     npm run build
 

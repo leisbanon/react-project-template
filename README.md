@@ -8,7 +8,6 @@ Application | Version |
 | `less` | ^3.8.1 |
 | `axios` | ^0.18.0 |
 | `webpack` | 3.8.1 |
-||
 
 
 ## 安装与开发

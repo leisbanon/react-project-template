@@ -5,6 +5,7 @@ const components = (path) => Loadable({
     loading:() => (null)
 });
 
-// const List = components('list/list');
+const NavBars = components('navBar/index');
 export {
+    NavBars
 }

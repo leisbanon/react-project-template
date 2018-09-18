@@ -2,6 +2,7 @@ import React from 'react'
 import {Redirect} from 'react-router-dom'
 import Loadable from 'react-loadable'
 
+const baseUrl = '/react-project';
 
 /**
  * 组件异步加载装置 => react-loadables
@@ -13,21 +14,36 @@ const loadables = (filename) => Loadable({
 });
 
 
-
 /**
  * 根路由集合
  */
 const rootRouters = [
     {
-        //根路由匹配
         path:'/',
         exact:true,
-        component:() => <Redirect to='/react-project'/>
+        component:() => <Redirect to={baseUrl}/>
     },
     {
         // 首页
-        path:'/react-project',
+        path:`${baseUrl}`,
+        exact:true,
         component:loadables('main')
+    },
+    {
+        path:`${baseUrl}/navBar`,
+        component:loadables('navBar/navBar'),
+    },
+    {
+        path:`${baseUrl}/button`,
+        component:loadables('button/button'),
+    },
+    {
+        path:`${baseUrl}/input`,
+        component:loadables('input/input'),
+    },
+    {
+        path:`${baseUrl}/network`,
+        component:loadables('network/network'),
     },
     {
         // 404 匹配
@@ -40,11 +56,6 @@ const rootRouters = [
  *  嵌套路由集合
  */
 const routers = [
-    {
-        // 组件中状态管理 => state 属性的使用
-        path:'/reactState',
-        component:loadables('reactState')
-    },
 ];
 
 

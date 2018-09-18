@@ -1,3 +1,18 @@
-html{
-    font-size: 14px;
+body{
+    background: #f5f5f9;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-exit{
+    opacity: 0;
+}
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }

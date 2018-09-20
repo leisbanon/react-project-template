@@ -11,7 +11,7 @@ class Views extends React.Component {
     }
     render() { 
         return (
-            <div>
+            <div id='page'>
                 <NavBars title='标题'/>
             </div>
         );

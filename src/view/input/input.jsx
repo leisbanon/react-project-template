@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import { NavBars } from '@/components'
 import { List,InputItem } from 'antd-mobile';
-import { createForm } from 'rc-form';
+import {
+    Button
+} from 'antd-mobile'
 
 class Inputs extends Component {
     constructor(props) {
@@ -21,7 +23,7 @@ class Inputs extends Component {
     }
     render() { 
         return(
-            <div>
+            <div id='page'>
                 <NavBars title='Antd Input'/><br/>
                 <List className="my-list">
                     <InputItem
@@ -47,7 +49,6 @@ class Inputs extends Component {
                         <li>密码：{this.state.form.userphone}</li>
                     </ul>
                 </div>
-                
             </div>
         )
     }

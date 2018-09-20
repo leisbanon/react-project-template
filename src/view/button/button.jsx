@@ -9,7 +9,7 @@ class Buttons extends Component {
     }
     render() { 
         return(
-            <div>
+            <div id='page'>
                 <NavBars title='Antd Button'/>
                 <p>
                     <Button type='primary' size='small' inline>主要按钮</Button>

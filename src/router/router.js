@@ -26,36 +26,31 @@ const rootRouters = [
     {
         // 首页
         path:`${baseUrl}`,
-        exact:true,
         component:loadables('main')
     },
-    {
-        path:`${baseUrl}/navBar`,
-        component:loadables('navBar/navBar'),
-    },
-    {
-        path:`${baseUrl}/button`,
-        component:loadables('button/button'),
-    },
-    {
-        path:`${baseUrl}/input`,
-        component:loadables('input/input'),
-    },
-    {
-        path:`${baseUrl}/network`,
-        component:loadables('network/network'),
-    },
-    {
-        // 404 匹配
-        path:'*',
-        component:loadables('404')
-    }
 ];
 
 /**
  *  嵌套路由集合
  */
 const routers = [
+    {
+        path:'/navBar',
+        component:loadables('navBar/navBar'),
+    },
+    {
+        path:'/button',
+        component:loadables('button/button'),
+    },
+    {
+        path:'/input',
+        exact:true,
+        component:loadables('input/input'),
+    },
+    {
+        path:'/network',
+        component:loadables('network/network'),
+    },
 ];
 
 

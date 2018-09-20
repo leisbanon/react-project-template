@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import {
     Button,
-    Modal,
 } from 'antd-mobile'
 
 import {
@@ -14,13 +13,12 @@ import {
 } from '@/api/api'
 
 
-
 class Views extends Component {
     constructor(props) {
         super(props);
         this.state = {
             isLoading:false,
-            network_content:''
+            network_content:'',
         }
     }
     onRequest() {
@@ -31,15 +29,17 @@ class Views extends Component {
         getRequest(params).then(v => {
             this.setState({
                 isLoading:false,
-                network_content:v
+                network_content:v,
+
+                isShow:false,
             });
         }).catch(e => {
             console.log(e);
-        })
+        });
     }
     render() { 
         return(
-            <div>
+            <div id='page'>
                 <NavBars title='Axios Request'/>
                 <p style={{'marginLeft':'30px'}}>
                     <Button 

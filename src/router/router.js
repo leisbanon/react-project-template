@@ -14,10 +14,9 @@ const loadables = (filename) => Loadable({
 });
 
 
-/**
- * 根路由集合
- */
-const rootRouters = [
+
+// 配置路由对象
+let rootRouters = [
     {
         path:'/',
         exact:true,
@@ -26,35 +25,36 @@ const rootRouters = [
     {
         // 首页
         path:`${baseUrl}`,
+        exact:true,
         component:loadables('main')
     },
-];
-
-/**
- *  嵌套路由集合
- */
-const routers = [
     {
-        path:'/navBar',
+        path:`${baseUrl}/navBar`,
         component:loadables('navBar/navBar'),
     },
     {
-        path:'/button',
+        path:`${baseUrl}/button`,
         component:loadables('button/button'),
     },
     {
-        path:'/input',
-        exact:true,
+        path:`${baseUrl}/input`,
         component:loadables('input/input'),
     },
     {
-        path:'/network',
+        path:`${baseUrl}/network`,
         component:loadables('network/network'),
     },
+    {
+        pagh:'*',
+        component:loadables('404'),
+    },
+];
+
+let childRouters = [
 ];
 
 
 export {
     rootRouters,
-    routers,
+    childRouters,
 }

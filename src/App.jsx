@@ -1,11 +1,11 @@
 import React from 'react';
-import {TransitionGroup,CSSTransition} from 'react-transition-group'
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
 } from 'react-router-dom'
 
-import { rootRouters,routers } from '@/router/router'
+import { rootRouters } from '@/router/router'
 
 class App extends React.Component {
   constructor(props) {
@@ -15,17 +15,19 @@ class App extends React.Component {
     return(
       <Router>
         <div id='app'>
-          {
-            rootRouters.map((route,index) => {
-              return(
-                <Route 
-                key={index}
-                exact={route.exact}
-                path={route.path}
-                component={route.component}/>
-              )
-            })
-          }
+          <Switch>
+            {
+              rootRouters.map((route,index) => {
+                return(
+                  <Route 
+                  key={index}
+                  exact={route.exact}
+                  path={route.path}
+                  component={route.component}/>
+                )
+              })
+            }
+            </Switch>
         </div>
       </Router>
     );

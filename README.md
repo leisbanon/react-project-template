@@ -2,7 +2,7 @@
 ```
 |—— config  #webpack 等配置
 |—— pubcli  #HTML静态入口
-|—— scripts #文件编译入口配置
+|—— scripts #文件编译入口
 |—— scr 
     |—— api         #定义API接口请求
     |—— components  #React 组件定义模块

@@ -11,6 +11,7 @@
     |—— store       #React 状态管理模块，Redux
     |—— style       #项目样式定义模块
     |—— util        #工具类
+        |—— responsive-rem.js   #页面rem 适配
     |—— view        #应用视图展示
     |—— App.jsx
     |—— http.js     #Axio 请求扩展配置

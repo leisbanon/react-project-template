@@ -25,8 +25,7 @@ class Views extends Component {
         this.setState({
             isLoading:true,
         });
-        let params = {city:'长沙'}
-        getRequest(params).then(v => {
+        getRequest().then(v => {
             this.setState({
                 isLoading:false,
                 network_content:v,

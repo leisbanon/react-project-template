@@ -1,0 +1,2 @@
+webpackJsonp([12],{127:function(s,o,e){var r=e(323);"string"===typeof r&&(r=[[s.i,r,""]]);var n={hmr:!1};n.transform=void 0;e(124)(r,n);r.locals&&(s.exports=r.locals)},323:function(s,o,e){o=s.exports=e(123)(!0),o.push([s.i,"","",{version:3,sources:[],names:[],mappings:"",file:"message.less",sourceRoot:""}])}});
+//# sourceMappingURL=12.f5cb2ab5.chunk.js.map
